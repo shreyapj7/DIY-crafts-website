@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> DIY crafts </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Home Page -->
+    <div id="home">
+        <h1 class="main-title">✂️DIY crafts in minutes </h1>
+        <p class="subtitle">Create something beautiful every day!</p>
+        
+        <div class="crafts-container">
+            <div class="craft-card" onclick="showCraft('paper')">
+                <div class="craft-icon" style="background: linear-gradient(45deg, #de3c8d, #ffca67);">📄</div>
+                <h3> 🖇️ Paper Crafts</h3>
+                <p>Fun projects using paper and scissors</p>
+            </div>
+            
+            <div class="craft-card" onclick="showCraft('Jewellery')">
+                <div class="craft-icon" style="background: linear-gradient(45deg, #f375f3, #75e8e3);">💎</div>
+                <h3> 🖇️Jewellery Making</h3>
+                <p>Beautiful accessories you can make</p>
+            </div>
+            
+            <div class="craft-card" onclick="showCraft('decoration')">
+                <div class="craft-icon" style="background: linear-gradient(45deg, #73ec73, #f5dd56);">🏠</div>
+                <h3>🖇️Home Decoration</h3>
+                <p>Pretty things to decorate your room</p>
+            </div>
+            
+            <div class="craft-card" onclick="showCraft('painting')">
+                <div class="craft-icon" style="background: linear-gradient(45deg, #e042a6, #4065d4);">🎨</div>
+                <h3> 🖇️Painting </h3>
+                <p>Colorful art projects and paintings</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Paper Crafts Page -->
+    <div id="paper" class="craft-page">
+        <button class="back-button" onclick="goHome()">← Back to Home</button>
+        <h2>Paper Crafts Projects</h2>
+        
+        <div class="craft-details">
+            <h3>🌸 Paper Flower Bouquet</h3>
+            <span class="difficulty easy">Easy</span>
+            
+            <div class="materials">
+                <h4>📋 Materials Needed:</h4>
+                <p>• Colored paper • Scissors • Glue stick • wire • Ribbon</p>
+            </div>
+            
+            <div class="steps">
+                <h4>📝 Steps:</h4>
+                <div class="step">1. Cut colored paper into flower petal shapes</div>
+                <div class="step">2. Glue petals together to form flowers</div>
+                <div class="step">3. Attach wire as stems</div>
+                <div class="step">4. Bundle together and tie with ribbon</div>
+                <div class="step">5. Your beautiful paper bouquet is ready!</div>
+                <a href="https://www.youtube.com/shorts/Dfu3-wO-dEI" target="_blank" 
+                 style="color: #ff6347; text-decoration: none; font-weight: bold;">
+                📺 Click here to watch the tutorial
+                  </a>
+            </div>
+            
+            <p><strong>Time:</strong> 30 minutes | <strong>Perfect for:</strong> Gifts or asthetic vibes</p>
+        </div>
+    </div>
+
+    <!-- Jewellery Making Page -->
+    <div id="Jewellery" class="craft-page">
+        <button class="back-button" onclick="goHome()">← Back to Crafts</button>
+        <h2>Jewellery Making Projects</h2>
+        
+        <div class="craft-details">
+            <h3>✨ Bracelet</h3>
+            <span class="difficulty easy">Easy</span>
+            
+            <div class="materials">
+                <h4>📋 Materials Needed:</h4>
+                <p>• Colorful beads • Elastic string • Scissors • Small charm (optional)</p>
+            </div>
+            
+            <div class="steps">
+                <h4>📝 Steps:</h4>
+                <div class="step">1. Cut elastic string to fit your wrist plus 2 inches</div>
+                <div class="step">2. Thread colorful beads in any pattern you like</div>
+                <div class="step">3. Add a charm in the middle if you want</div>
+                <div class="step">4. Tie the ends together with a secure knot</div>
+                <div class="step">5. Trim extra string and enjoy your bracelet!</div>
+                <a href="https://www.youtube.com/watch?v=Rt1F7mIki9I&t=8s" target="_blank" 
+                 style="color: #ff6347; text-decoration: none; font-weight: bold;">
+                📺 Click here to watch the tutorial
+                  </a>
+            </div>
+            
+            <p><strong>Time:</strong> 15 minutes | <strong>Perfect for:</strong> Gifts for friends or yourself</p>
+        </div>
+    </div>
+
+    <!-- Home Decoration Page -->
+    <div id="decoration" class="craft-page">
+        <button class="back-button" onclick="goHome()">← Back to Crafts</button>
+        <h2>Home Decoration Projects</h2>
+        
+        <div class="craft-details">
+            <h3>🕯️Lantern</h3>
+            <span class="difficulty medium">Medium</span>
+            
+            <div class="materials">
+                <h4>📋 Materials Needed:</h4>
+                <p>• Glass mason jar • Battery LED lights • Decorative paper • Glue • Ribbon</p>
+            </div>
+            
+            <div class="steps">
+                <h4>📝 Steps:</h4>
+                <div class="step">1. Clean the mason jar thoroughly</div>
+                <div class="step">2. Cut decorative paper to fit around the jar</div>
+                <div class="step">3. Glue paper around the outside of jar</div>
+                <div class="step">4. Put LED lights inside the jar</div>
+                <div class="step">5. Tie ribbon around the top for decoration</div>
+                <div class="step">6. Turn on lights and enjoy your lantern!</div>
+                <a href="https://www.youtube.com/shorts/2dSkl_4ZCPI" target="_blank" 
+                 style="color: #ff6347; text-decoration: none; font-weight: bold;">
+                📺 Click here to watch the tutorial
+                  </a>
+            </div>
+            
+            <p><strong>Time:</strong> 45 minutes | <strong>Perfect for:</strong> Bedroom or study table decoration</p>
+        </div>
+    </div>
+
+    <!-- Painting Crafts Page -->
+    <div id="painting" class="craft-page">
+        <button class="back-button" onclick="goHome()">← Back to Crafts</button>
+        <h2>Painting Crafts Projects</h2>
+        
+        <div class="craft-details">
+            <h3>🌈 Canvas Quote Painting</h3>
+            <span class="difficulty easy">Easy</span>
+            
+            <div class="materials">
+                <h4>📋 Materials Needed:</h4>
+                <p>• Small canvas • Acrylic paints • Brushes • Pencil • Eraser • Your favorite quote</p>
+            </div>
+            
+            <div class="steps">
+                <h4>📝 Steps:</h4>
+                <div class="step">1. Choose a motivational quote you love</div>
+                <div class="step">2. Paint a colorful background on canvas</div>
+                <div class="step">3. Let the background dry completely</div>
+                <div class="step">4. Lightly pencil in your quote</div>
+                <div class="step">5. Paint over the letters with contrasting color</div>
+                <div class="step">6. Erase pencil marks and let dry</div>
+                <a href="https://www.youtube.com/shorts/7OIktmrqIGM" target="_blank" 
+                 style="color: #ff6347; text-decoration: none; font-weight: bold;">
+                📺 Click here to watch the tutorial
+                  </a>
+            </div>
+            
+            <p><strong>Time:</strong> 1 hour | <strong>Perfect for:</strong> Wall decoration and motivation</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

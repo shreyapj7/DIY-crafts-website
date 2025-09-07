@@ -1,5 +1,10 @@
+.font-comic { font-family: 'Comic Neue', cursive; }
+.font-dancing { font-family: 'Dancing Script', cursive; }
+.bg-craft-gray { background-color: #444444; }
+.text-craft-green { color: #008000; }
+.text-craft-brown { color: #8b4513; }
 
-        body {
+body {
             background-color: #444444;
             font-family: Arial;
             padding: 20px;
@@ -137,6 +142,7 @@
             font-size: 2.5em;
             margin-bottom: 20px;
         }
+
 
 
 

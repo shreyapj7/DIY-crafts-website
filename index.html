@@ -3,14 +3,15 @@
 <head>
     <title> DIY crafts </title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-craft-gray p-5">
     <!-- Home Page -->
     <div id="home">
-        <h1 class="main-title">✂️DIY crafts in minutes </h1>
+        <h1 class="main-title text-4xl md:text-6xl">✂️DIY crafts in minutes </h1>
         <p class="subtitle">Create something beautiful every day!</p>
         
-        <div class="crafts-container">
+        <div class="flex flex-wrap justify-center gap-8">
             <div class="craft-card" onclick="showCraft('paper')">
                 <div class="craft-icon" style="background: linear-gradient(45deg, #de3c8d, #ffca67);">📄</div>
                 <h3> 🖇️ Paper Crafts</h3>
@@ -29,7 +30,7 @@
                 <p>Pretty things to decorate your room</p>
             </div>
             
-            <div class="craft-card" onclick="showCraft('painting')">
+            <div class="craft-card hover:scale-105 transition-transform duration-300" onclick="showCraft('painting')">
                 <div class="craft-icon" style="background: linear-gradient(45deg, #e042a6, #4065d4);">🎨</div>
                 <h3> 🖇️Painting </h3>
                 <p>Colorful art projects and paintings</p>
@@ -38,8 +39,8 @@
     </div>
 
     <!-- Paper Crafts Page -->
-    <div id="paper" class="craft-page">
-        <button class="back-button" onclick="goHome()">← Back to Home</button>
+    <div id="paper" class="hidden text-center">
+        <button class="back-button hover:bg-blue-700 transition-colors duration-300" onclick="goHome()">← Back to Home</button>
         <h2>Paper Crafts Projects</h2>
         
         <div class="craft-details">
@@ -165,3 +166,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
